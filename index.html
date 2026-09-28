@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>六级备考助手 CET-6 Prep</title>
+<meta name="description" content="围绕英语六级备考的一站式学习网站：词汇拼写测试、每日句子阅读语感训练、查词翻译中英互译AI对话、听力写作批改纠错、翻译练习自动打分复盘、阅读技巧专区。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+<link rel="stylesheet" href="css/style.css?v=10">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/">
+        <span class="brand-icon">📚</span>
+        <span class="brand-text">六级备考助手<small>CET-6 Prep</small></span>
+      </a>
+      <nav class="nav" id="mainNav"></nav>
+      <div class="topbar-right">
+        <span class="streak-chip" id="streakChip" title="连续学习天数">🔥 <b id="streakNum">0</b> 天</span>
+        <button class="theme-btn" id="themeBtn" title="切换主题">🎨</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="view" class="container"></main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>六级备考助手 · 纯前端本地运行，学习数据保存在浏览器 localStorage 中</p>
+      <p class="footer-links">
+        <a href="#/settings">设置 / AI 配置</a> ·
+        <a href="#/settings">数据导出备份</a>
+      </p>
+    </div>
+  </footer>
+</div>
+
+<div id="toastWrap" class="toast-wrap"></div>
+<div id="modalRoot"></div>
+
+<!-- 数据文件（普通 script，保证 file:// 双击打开也能用） -->
+<script src="data/vocabulary.js?v=9"></script>
+<script src="data/sentences.js?v=9"></script>
+<script src="data/passages.js?v=9"></script>
+<script src="data/listening.js?v=9"></script>
+<script src="data/writing.js?v=9"></script>
+<script src="data/writing_ext.js?v=9"></script>
+<script src="data/writing_ext2.js?v=10"></script>
+<script src="data/reading.js?v=9"></script>
+<script src="data/reading_ext.js?v=9"></script>
+<script src="data/reading_ext2.js?v=9"></script>
+<script src="data/reading_ext3.js?v=9"></script>
+<script src="data/reading_ext4.js?v=9"></script>
+<script src="data/listening_ext.js?v=9"></script>
+<script src="data/passages_ext.js?v=9"></script>
+<script src="data/passages_ext2.js?v=9"></script>
+<script src="data/passages_ext3.js?v=9"></script>
+<script src="data/passages_ext4.js?v=10"></script>
+<script src="data/cheatsheet.js?v=19"></script>
+
+<!-- 词汇扩展包（必须在 vocabulary.js 之后加载） -->
+<script src="data/vocab_ext1.js?v=9"></script>
+<script src="data/vocab_ext2.js?v=9"></script>
+<script src="data/vocab_ext3.js?v=9"></script>
+<script src="data/vocab_ext4.js?v=9"></script>
+<script src="data/vocab_ext5.js?v=9"></script>
+<script src="data/vocab_ext6.js?v=9"></script>
+<script src="data/vocab_ext7.js?v=9"></script>
+<script src="data/vocab_ext8.js?v=9"></script>
+<script src="data/vocab_ext9.js?v=9"></script>
+<script src="data/vocab_ext10.js?v=9"></script>
+<script src="data/vocab_ext11.js?v=9"></script>
+<script src="data/vocab_ext12.js?v=9"></script>
+<script src="data/vocab_ext13.js?v=9"></script>
+<script src="data/vocab_ext14.js?v=13"></script>
+
+<!-- 核心库 -->
+<script src="js/store.js?v=13"></script>
+<script src="js/tts.js?v=9"></script>
+<script src="js/ai.js?v=12"></script>
+
+<!-- 页面模块 -->
+<script src="js/vocab.js?v=13"></script>
+<script src="js/daily.js?v=12"></script>
+<script src="js/reading.js?v=9"></script>
+<script src="js/tools.js?v=9"></script>
+<script src="js/listenwrite.js?v=12"></script>
+<script src="js/translate.js?v=12"></script>
+<script src="js/cheatsheet.js?v=12"></script>
+<script src="js/app.js?v=10"></script>
+</body>
+</html>
